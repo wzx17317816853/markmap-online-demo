@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Markmap 在线思维导图</title>
+  <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@0.15.3"></script>
+</head>
+<body>
+  <svg id="mindmap"></svg>
+  <script>
+    const md = decodeURIComponent(location.hash.slice(1));
+    window.markmap.autoLoader.render(document.getElementById('mindmap'), md);
+  </script>
+</body>
+</html>
